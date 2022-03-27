@@ -2,4 +2,4 @@
 
 Computer Graphics homework, programmed in C++ with OpenGL.
 
-Youtube video: https://youtu.be/ZYQTHAPdLRk
+Youtube video featuring different graph setups: https://youtu.be/ZYQTHAPdLRk
