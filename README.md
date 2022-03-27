@@ -12,7 +12,9 @@ Each node is a circle in the hyperbolic plane that has a texture that identifies
 
 ## Solution
 
+YouTube video showcasing the solution with different graph setups: https://youtu.be/ZYQTHAPdLRk
+
 <img width="676" alt="Screenshot 2022-03-27 at 22 15 31" src="https://user-images.githubusercontent.com/27449756/160299175-494c084c-0437-45eb-99d9-51fb7ace38c6.png">
 <img width="676" alt="Screenshot 2022-03-27 at 22 15 41" src="https://user-images.githubusercontent.com/27449756/160299180-f9be6896-80ba-4ed0-bef6-4595e7027f48.png">
 
-YouTube video showcasing the solution with different graph setups: https://youtu.be/ZYQTHAPdLRk
+
