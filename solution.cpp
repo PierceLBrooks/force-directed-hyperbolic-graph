@@ -427,7 +427,7 @@ void onKeyboard(unsigned char key, int pX, int pY)
 
 void onKeyboardUp(unsigned char key, int pX, int pY)
 {
-	printf("Left button %d at (%3.2f, %3.2f)\n", key, pX, pY);
+	printf("Keyboard %d at (%3.2f, %3.2f)\n", key, (float)pX, (float)pY);
 }
 
 void onMouseMotion(int pX, int pY)
@@ -445,7 +445,7 @@ void onMouse(int button, int state, int pX, int pY)
 	float cX = 2.0f * pX / windowWidth - 1;
 	float cY = 1.0f - 2.0f * pY / windowHeight;
 
-	char *buttonStat;
+	const char *buttonStat;
 	switch (state)
 	{
 	case GLUT_DOWN:
@@ -453,6 +453,9 @@ void onMouse(int button, int state, int pX, int pY)
 		break;
 	case GLUT_UP:
 		buttonStat = "released";
+		break;
+	default:
+		buttonStat = "unknown";
 		break;
 	}
 
