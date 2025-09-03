@@ -522,6 +522,8 @@ public:
 	}
 };
 
+#if !defined(__APPLE__)
 int random();
+#endif
 
 #endif

@@ -382,6 +382,7 @@ HyperbolicGraph hyperbolicGraph(graphPoints, 20, 0.025f, 5.0f);
 
 void onInitialization()
 {
+  printf("Press the Space Bar to setup the simulation\n");
 	glViewport(0, 0, windowWidth, windowHeight);
 
 	glGenVertexArrays(1, &vao);
@@ -417,7 +418,7 @@ void onKeyboard(unsigned char key, int pX, int pY)
 	if (key == 'd')
 		glutPostRedisplay();
 
-	if (key == 32)
+	if (key == 32) // space bar
 	{
 		hyperbolicGraph.SimulationSetup();
 		simulationStarted = true;
@@ -426,7 +427,7 @@ void onKeyboard(unsigned char key, int pX, int pY)
 
 void onKeyboardUp(unsigned char key, int pX, int pY)
 {
-	printf("Left button %d at\n", key);
+	printf("Left button %d at (%3.2f, %3.2f)\n", key, pX, pY);
 }
 
 void onMouseMotion(int pX, int pY)
