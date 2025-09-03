@@ -5,9 +5,12 @@
 // Do not change it if you want to submit a homework.
 // In the homework, file operations other than printf are prohibited.
 //=============================================================================================
+#ifndef FRAMEWORK_H
+#define FRAMEWORK_H
 #define _USE_MATH_DEFINES // M_PI
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <math.h>
 #include <vector>
 #include <string>
@@ -518,3 +521,7 @@ public:
 			glDeleteProgram(shaderProgramId);
 	}
 };
+
+int random();
+
+#endif

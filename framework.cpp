@@ -26,9 +26,16 @@ void onMouse(int button, int state, int pX, int pY);
 // Idle event indicating that some time elapsed: do animation here
 void onIdle();
 
+int random()
+{
+	return rand();
+}
+
 // Entry point of the application
 int main(int argc, char *argv[])
 {
+	srand(time(NULL));
+
 	// Initialize GLUT, Glew and OpenGL
 	glutInit(&argc, argv);
 
